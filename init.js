@@ -1,27 +1,22 @@
 ;(function () {
   const painter = {
     greet(user) {
-      document.querySelector('#user--info').textContent = `Hey ${user.displayName} how are you feeling today?`
+      document.querySelector('#user--info').textContent = `How are you feeling today?`
     // qs('#user--photo').src = user.photoURL
     },
     getEmotion(emotion) {
       const emo = document.createElement('span');
-      emo.className = `em em-${emotion}`;
+      emo.className = `emojicon e1a-${emotion}`;
       return emo;
     },
     drawEmotions() {
       const emotionsHolder = document.querySelector('#user--emotions');
-      `alien angel angry anguished astonished baby blush\
-boar bug cactus confounded confused couple_with_heart\
-cry cupid dancer dancers disappointed disappointed_relieved\
-dizzy exclamation expressionless fearful ghost grin hear_no_evil\
-heart_eyes honeybee innocent joy kiss kissing laughing lips\
-monkey_face open_mouth pig_nose pouting_cat sleepy smile snail sweat tongue zzz`
-       .replace(/^[ /\n] /gm, '')
-        .split(' ')
-        .forEach(emotion => {
-          emotionsHolder.appendChild(painter.getEmotion(emotion.trim()))
-        });
+      `smiley blush sunglasses unamused disappointed sob nauseated_face heart_eyes rage`
+      .replace(/^[ /\n] /gm, '')
+      .split(' ')
+      .forEach(emotion => {
+        emotionsHolder.appendChild(painter.getEmotion(emotion.trim()))
+      });
     }
   }
   firebase.initializeApp(config)
@@ -30,7 +25,7 @@ monkey_face open_mouth pig_nose pouting_cat sleepy smile snail sweat tongue zzz`
   firebase.auth().onAuthStateChanged(user => {
     if (user) {
       painter.greet(user)
-      painter.drawEmotions()
+      //painter.drawEmotions()
     } else {
       firebase.auth().signInWithRedirect(provider)
     }

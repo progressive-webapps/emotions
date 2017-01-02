@@ -5,14 +5,30 @@
     <meta name="viewport" content="width=device-width" initial-scale=1></meta>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css">
-    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Ranks/emojione/master/assets/css/emojione-awesome.css">
 </head>
 
 <body>
     <div class="user">
-        <H1 id="user--info"></H1>
+        <H1 id="user--info" onclick="location.reload(true)">How are you feeling?</H1>
         <!--<img id="user--photo" />-->
-        <div id='user--emotions'></div>
+        <div id="user--emotions">
+            <div class="row">
+                <div class="emojicon e1a-smiley"></div>
+                <div class="emojicon e1a-blush"></div>
+                <div class="emojicon e1a-sunglasses"></div>
+            </div>
+            <div class="row">
+                <div class="emojicon e1a-unamused"></div>
+                <div class="emojicon e1a-disappointed"></div>
+                <div class="emojicon e1a-sob"></div>
+            </div>
+            <div class="row">
+                <div class="emojicon e1a-thermometer_face"></div>
+                <div class="emojicon e1a-astonished"></div>
+                <div class="emojicon e1a-angry"></div>
+            </div>
+        </div>
     </div>
 </body>
 
