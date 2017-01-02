@@ -2,20 +2,22 @@
 
 body {
   background-color: #FFDD67;
+  color: #494949;
   font-family: 'Libre Franklin', sans-serif;
   margin: 0;
 }
 
 h1 {
   text-align: center;
-  height: 10vh;
-  line-height: 10vh;
+  line-height: 20vh;
+  font-size: 4vh;
+  margin: 0;
 }
 
 .row {
   display: flex;
   flex-direction: row;
-  height: 30vh;
+  height: 25vh;
   align-items: center;
 }
 
