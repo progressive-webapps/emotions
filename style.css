@@ -2,14 +2,14 @@
 
 body {
   background-color: #FFDD67;
-
-
   font-family: 'Libre Franklin', sans-serif;
   margin: 0;
 }
 
 h1 {
   text-align: center;
+  height: 10vh;
+  line-height: 10vh;
 }
 
 .row {
