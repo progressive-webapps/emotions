@@ -1,0 +1,7 @@
+const config = {
+  apiKey: "",
+  authDomain: "emotions-677fa.firebaseapp.com",
+  databaseURL: "https://emotions-677fa.firebaseio.com",
+  storageBucket: "emotions-677fa.appspot.com",
+  messagingSenderId: ""
+}
