@@ -1,7 +1,8 @@
 ;(function () {
   const painter = {
     greet(user) {
-      document.querySelector('#user--info').textContent = `How are you feeling today?`
+      const name = user.displayName.split(' ')[0]
+      document.querySelector('#user--info').textContent = `Hi ${name}, how are you feeling today?`
     // qs('#user--photo').src = user.photoURL
     },
     getEmotion(emotion) {
