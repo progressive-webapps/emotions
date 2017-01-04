@@ -15,7 +15,6 @@ h1 {
 
 .row {
   display: flex;
-  flex-direction: row;
   height: 25vh;
   align-items: center;
 }
