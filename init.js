@@ -6,7 +6,7 @@
     },
     getEmotion(emotion) {
       const emo = document.createElement('span');
-      emo.className = `em em-${emotion}`;
+      emo.className = `emojicon e1a-${emotion}`;
       return emo;
     },
     drawEmotions() {

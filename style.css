@@ -27,3 +27,9 @@ span.em {
     height: 50vh;
 }
 
+span.emojicon {
+    background-size: 50vw 50vh;
+    width: 50vw;
+    height: 50vh;
+    margin: 10px;
+}
